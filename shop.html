@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicol Garments Store - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Resources/LogoImg.png" alt="Bicol Garments Logo" onerror="this.onerror=null; this.src='Resources/placeholder.png';">
+            <span>Store</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="custom-tailoring.html">Custom Tailoring</a>
+        </nav>
+        <div class="user-options">
+            <a href="login.html">Login/Register</a>
+        </div>
+    </div>
+</header>
+
+<!-- Search and Cart Section -->
+<section class="search-cart">
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <img src="Resources/search.png" alt="Search" class="icon">
+    </div>
+    <a href="cart.html" class="cart-icon">
+        <img src="Resources/cart.png" alt="Cart" class="icon">
+    </a>
+</section>
+
+<!-- Filter and Product Section -->
+<section class="search-filter">
+    <div class="filter">
+        <div class="filter-section">
+            <h3>Filter Search</h3>
+            <div class="checkbox-group">
+                <label><input type="checkbox" value="Women Apparel"> Women Apparel</label>
+                <label><input type="checkbox" value="Men Apparel"> Men Apparel</label>
+                <label><input type="checkbox" value="Machines"> Machines</label>
+                <label><input type="checkbox" value="School Clothing"> School Clothing</label>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h4>Prices</h4>
+            <input type="range" min="100" max="5000" value="2500" id="price-range">
+            <p>Range: ₱100 - ₱5000</p>
+        </div>
+
+        <div class="filter-section">
+            <h4>Rating</h4>
+            <div class="star-rating">
+                <div class="stars" data-rating="5">⭐⭐⭐⭐⭐</div>
+                <div class="stars" data-rating="4">⭐⭐⭐⭐☆</div>
+                <div class="stars" data-rating="3">⭐⭐⭐☆☆</div>
+                <div class="stars" data-rating="2">⭐⭐☆☆☆</div>
+                <div class="stars" data-rating="1">⭐☆☆☆☆</div>
+            </div>
+        </div>
+
+        <button class="apply-btn" id="apply-filters">Apply Filters</button>
+        <button class="clear-btn" id="clear-filters">Clear Filters</button>
+    </div>
+
+    <!-- Product Grid with Updated Format -->
+    <div class="product-grid" id="product-grid">
+        <!-- Dynamic Products Rendered by JavaScript -->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Bicol Garments Store</h3>
+            <p>Crafting excellence in every stitch since 1990.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Customer Services</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Shipping Info</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Email: support@bicolgarments.com</p>
+            <p>Phone: +63 900 123 4567</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

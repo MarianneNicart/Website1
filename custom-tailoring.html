@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Tailoring - Bicol Garments Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Resources/LogoImg.png" alt="Bicol Garments Logo" onerror="this.onerror=null; this.src='Resources/placeholder.png';">
+            <span>Store</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="custom-tailoring.html">Custom Tailoring</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="report.html">Report</a>
+        </nav>
+        <div class="user-options">
+            <a href="login.html">Login/Register</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <h2>Custom Tailoring Online Form</h2>
+
+    <form action="view-tailoring-orders.html" method="POST" enctype="multipart/form-data">
+        
+        <!-- Customer Information -->
+        <div class="form-group">
+            <label for="customerName">Full Name:</label>
+            <input type="text" id="customerName" name="customerName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="customerPhone">Phone Number:</label>
+            <input type="tel" id="customerPhone" name="customerPhone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="customerAddress">Address:</label>
+            <textarea id="customerAddress" name="customerAddress" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <!-- Tailoring Details -->
+        <div class="form-group">
+            <label for="garmentType">Garment Type:</label>
+            <select id="garmentType" name="garmentType" required>
+                <option value="Shirt">Shirt</option>
+                <option value="Pants">Pants</option>
+                <option value="Dress">Dress</option>
+                <option value="Jacket">Jacket</option>
+                <option value="Custom">Custom</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fabricType">Fabric Type:</label>
+            <select id="fabricType" name="fabricType" required>
+                <option value="Cotton">Cotton</option>
+                <option value="Linen">Linen</option>
+                <option value="Denim">Denim</option>
+                <option value="Silk">Silk</option>
+                <option value="Wool">Wool</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="measurements">Measurements (in inches):</label>
+            <textarea id="measurements" name="measurements" placeholder="Enter measurements (e.g., Chest: 40, Waist: 32, Length: 28)" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Add any specific instructions or details" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+        </div>
+
+        <!-- Photo Upload -->
+        <div class="form-group">
+            <label for="photos">Upload Reference Photos:</label>
+            <input type="file" id="photos" name="photos[]" multiple accept="image/*" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Order</button>
+
+    </form>
+
+    <!-- Back to Home Button -->
+    <div class="back-btn">
+        <a href="index.html">Back to Home</a>
+    </div>
+
+</div>
+
+  
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Bicol Garments Store</h3>
+            <p>Crafting excellence in every stitch since 1990.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Customer Services</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Shipping Info</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Email: support@bicolgarments.com</p>
+            <p>Phone: +63 900 123 4567</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

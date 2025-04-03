@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Resources/LogoImg.png" alt="Bicol Garments Logo" onerror="this.onerror=null; this.src='Resources/placeholder.png';">
+            <span>Store</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="custom-tailoring.html">Custom Tailoring</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="report.html">Report</a>
+        </nav>
+        <div class="user-options">
+            <a href="login.html">Login/Register</a>
+        </div>
+    </div>
+</header>
+
+<!-- Search and Cart Section -->
+<section class="search-cart">
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <img src="Resources/search.png" alt="Search" class="icon">
+    </div>
+    <a href="cart.html" class="cart-icon">
+        <img src="Resources/cart.png" alt="Cart" class="icon">
+    </a>
+</section>
+
+<section class="product-detail">
+    <img id="product-img" src="" alt="Product Image" onerror="this.onerror=null; this.src='Resources/placeholder.png';">
+    <div class="product-info">
+        <h2 id="product-name"></h2>
+        <p id="product-price"></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida, lectus nec ultricies posuere.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Bicol Garments Store</h3>
+            <p>Crafting excellence in every stitch since 1990.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Customer Services</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Shipping Info</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Email: support@bicolgarments.com</p>
+            <p>Phone: +63 900 123 4567</p>
+        </div>
+    </div>
+</footer>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const img = urlParams.get('img');
+    const name = urlParams.get('name');
+    const price = urlParams.get('price');
+
+    document.getElementById('product-img').src = `Resources/${img}`;
+    document.getElementById('product-name').textContent = name;
+    document.getElementById('product-price').textContent = price;
+</script>
+
+</body>
+</html>

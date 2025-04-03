@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Bicol Garments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="payment">
+        <h1>Payment Methods</h1>
+    
+        <div class="payment-options">
+            <label>
+                <input type="radio" name="payment" value="gcash" checked> GCash
+            </label>
+    
+            <label>
+                <input type="radio" name="payment" value="paypal"> PayPal
+            </label>
+    
+            <label>
+                <input type="radio" name="payment" value="creditcard"> Credit Card
+            </label>
+        </div>
+    
+        <form action="invoice.html" method="POST">
+            <input type="submit" value="Confirm Payment" class="btn">
+        </form>
+    </section>
+    
+
+<footer>
+    <p>&copy; 2025 Bicol Garments</p>
+</footer>
+
+</body>
+</html>
